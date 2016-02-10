@@ -1,8 +1,8 @@
-Mastering Physics Hw Solver 
-By Konstantino Sparakis
+#Mastering Physics Hw Solver 
+####By Konstantino Sparakis
 
 
-HOW IT WORKS
+##HOW IT WORKS
 The HW solver works under the following conditions. 
 1.) You have a solutions manual with the formula
 2.) You have the original text from the book for the question,
@@ -16,7 +16,7 @@ It will swap the 23 with the 20 and return to you “20*80+100”
 
 Now you can plug this in to wolphramalpha.com and get your answer.
 
-Tips
+##Tips
 - rewrite the formula when your inputting it so that it will work on input to wolfram alpha
 	So….
 	^ = Exponentials
@@ -29,3 +29,5 @@ Tips
 - Be careful with numbers in the text that point to figures like “figure 1.2”
 - You need to make sure the numbers in the original text and your modified version line up perfectly
 
+##Future Work
+- Add integration to wolphram alpha directly to get solved answers.
