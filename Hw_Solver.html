@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Mastering Physics HW Solver
+	Created by: Konstantino Sparakis -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>HW Solver</title>
+
+ <script src="js/jquery-1.10.2.min.js"></script>
+</head>
+
+<p>Book, Copy and paste text here</p>
+<textArea id="book">
+</textArea>
+
+<p>Solutions Manual Copy Formula here</p>
+<textarea id="solutions">
+</textarea>
+
+<p>Mastering Physics Copy Paste Text Here</p>
+<textArea id="mastering">
+</textArea>
+
+<p>Result</p>
+<button id="submit" onclick="compute();">Submit</button>
+
+<button id="submit" onclick="clear();">Clear</button>
+<textArea id="result">
+
+</textArea>
+<body>
+</body>
+</html>
+
+
+<script>
+
+function compute()
+{
+	var nums = $('#book').val();
+	var formula = $('#solutions').val();
+	var mastering = $('#mastering').val();
+	
+var Master = mastering.match(/\d+\.?\d*/g);
+var bookNums = nums.match(/\d+\.?\d*/g);
+
+console.log("Booknums:"+ bookNums);
+console.log("lol:"+ Master);
+
+for(var i=0;i<Master.length;i++)
+{
+	var re = new RegExp(bookNums[i]);
+	alert(re);
+	formula =formula.replace(re,Master[i]);
+	
+}
+
+$('#result').val(formula);
+}
+
+function clear()
+{
+	$( document ).ready(function() {
+
+	$('#book').val('');
+	$('#solutions').val('');
+	$('#mastering').val('');
+	});
+
+}
+
+</script>
