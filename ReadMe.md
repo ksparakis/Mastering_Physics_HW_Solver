@@ -2,7 +2,7 @@
 ####By Konstantino Sparakis
 
 
-##HOW IT WORKS
+##How It Works
 The HW solver works under the following conditions. 
 1.) You have a solutions manual with the formula
 2.) You have the original text from the book for the question,
